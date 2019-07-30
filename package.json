@@ -1,0 +1,21 @@
+{
+  "name": "rowanieee.org",
+  "version": "1.0.0",
+  "description": "Website for Rowan IEEE Student Branch",
+  "main": "index.js",
+  "repository": "git@github.com:rowanieee/rowanieee.org.git",
+  "author": "John McAvoy <mcavoyj5@students.rowan.edu>",
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "build": "npx gulp",
+    "start": "serve dist",
+    "dev": "npx gulp watch &; npx serve dist"
+  },
+  "devDependencies": {
+    "del": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^1.4.0",
+    "serve": "^11.1.0"
+  }
+}

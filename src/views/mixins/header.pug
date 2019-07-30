@@ -1,0 +1,8 @@
+mixin header(pageName)
+  - siteTitle = "Rowan University IEEE Student Chapter"
+  doctype html
+  head
+    if pageName != null
+      title= pageName + " | " + siteTitle
+    else
+      title= siteTitle

@@ -1,0 +1,9 @@
+mixin navbar(pageName)
+  -
+    navItems = [
+    {name: "Home", href: "/"},
+    {name: "Tutoring", href: "/tutoring"},
+    ]
+  ul
+    each item in navItems
+      li: a(href=item.href)=item.name
