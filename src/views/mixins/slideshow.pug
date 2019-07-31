@@ -1,0 +1,21 @@
+mixin slideshow(...slides)
+  //-
+  //- slide = {src: "htttp://...", caption: "My caption", description: "..."}
+  //-
+  .orbit#kw4dyx-orbit(role='region' aria-label='Event Photos' data-orbit data-options='animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;' data-resize='kw4dyx-orbit' data-e='dknej9-e')
+    ul.orbit-container(tabindex='0' style='height: 715.5px;')
+      button.orbit-previous(tabindex='0')
+        span.show-for-sr Previous Slide
+        | ◀︎
+      button.orbit-next(tabindex='0')
+        span.show-for-sr Next Slide
+        | ▶︎
+      each slide, i in slides
+        li.orbit-slide(data-slide=i style=i==0 ? '' : 'display: none;')
+          img.orbit-image(src=slide.src alt=slide.description)
+          figcaption.orbit-caption= slide.caption
+    nav.orbit-bullets
+      each slide, i in slides
+        button(data-slide=i)
+          span.show-for-sr= slide.description
+      span.show-for-sr Current Slide
