@@ -20,8 +20,7 @@ mixin navbar(pageName)
   .top-bar#mainNavigation
     .top-bar-left
       ul.menu.vertical.medium-horizontal
-        li.menu-text.hide-for-small-only
-          a(href="/") Rowan IEEE Student Branch
+        li.menu-text.hide-for-small-only Rowan IEEE Student Branch
         each item in navItems
           li: a(href=item.href)=item.name
             .top-bar-right
