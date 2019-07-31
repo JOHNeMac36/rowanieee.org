@@ -8,7 +8,10 @@ const OUTPUT_DIR = path.resolve(__dirname, 'dist')
 
 function compile_pug(cb) {
   src(['src/views/**.pug', '!src/views/mixins/**.pug'])
-    .pipe(pug())
+    .pipe(pug({
+      pretty: true,
+      debug: false,
+    }))
     .pipe(rename({
       dirname: '',
       extname: '.html'
@@ -28,7 +31,7 @@ function startServer(cb) {
   const http = require('http')
 
   const server = http.createServer((req, res) => handler(req, res, {cleanUrls: true, public: 'dist'}))
-  server.listen(5000)
+  server.listen(3000)
 
   return cb()
 
