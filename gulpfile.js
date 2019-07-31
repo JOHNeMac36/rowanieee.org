@@ -44,5 +44,5 @@ function clean(cb) {
 
 exports.default = compile_pug
 exports.start_server = startServer
-exports.watch = series(startServer, watch_files)
+exports.watch = series(compile_pug, startServer, watch_files)
 exports.clean = clean
