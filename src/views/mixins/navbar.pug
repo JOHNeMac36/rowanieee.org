@@ -1,9 +1,27 @@
 mixin navbar(pageName)
   -
     navItems = [
-    {name: "Home", href: "/"},
-    {name: "Tutoring", href: "/tutoring"},
+      {name: "About", href: "/about", children: [
+        {name: "What is IEEE?", href: "/about#whatisieee"},
+        {name: "How to Join", href: "/about#join"},
+        {name: "Constitution", href: "/about#constitution"},
+      ]},
+      {name: "News", href: "/news", children: [
+        {name: "Newsletter", href: "/news#newsletter"},
+      ]},
+      {name: "Events", href: "/events"},
+      {name: "E-Board", href: "/eboard"},
+      {name: "ProfBots", href: "/profbots"},
+      {name: "Tutoring", href: "/tutoring"},
+      {name: "Get Involved", href: "/get_involved"},
+      {name: "Contact Us", href: "/contact"},
     ]
-  ul
-    each item in navItems
-      li: a(href=item.href)=item.name
+
+  .top-bar#mainNavigation
+    .top-bar-left
+      ul.menu.vertical.medium-horizontal
+        li.menu-text.hide-for-small-only
+          a(href="/") Rowan IEEE Student Branch
+        each item in navItems
+          li: a(href=item.href)=item.name
+            .top-bar-right
