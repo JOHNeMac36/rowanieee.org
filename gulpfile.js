@@ -1,4 +1,4 @@
-const { src, dest, series, watch } = require('gulp');
+const { src, dest, series, parallel, watch } = require('gulp');
 const path = require('path')
 const pug = require('gulp-pug')
 const rename = require('gulp-rename')
@@ -16,9 +16,9 @@ function compile_pug(cb) {
       dirname: '',
       extname: '.html'
     }))
+    .on('error', err => {console.log(err.message); this.emit('end')})
     .pipe(dest(OUTPUT_DIR))
-
-  return cb()
+    .on('end', () => cb())
 }
 
 function watch_files(cb) {
@@ -37,12 +37,7 @@ function startServer(cb) {
 
 }
 
-function clean(cb) {
-  del("dist", {force: true})
-  cb()
-}
 
 exports.default = compile_pug
 exports.start_server = startServer
-exports.watch = series(compile_pug, startServer, watch_files)
-exports.clean = clean
+exports.watch = series(parallel(compile_pug, startServer), watch_files)
