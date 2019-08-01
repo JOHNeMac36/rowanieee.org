@@ -1,0 +1,30 @@
+#!/usr/bin/node
+const eboards = require('../../../resources/eboards.json')
+
+const {argv} = process
+if(argv.length <= 2)
+    console.log(`Err: not enough args
+  Usage:
+    eboard_lookup [year] ([name_search])
+    `)
+else {
+    const year = argv[2]
+    const name_search = argv[3]
+
+    let names = []
+    eboards.forEach(eboard => {
+        if(eboard.year == year) {
+            eboard.officers.forEach(officer => {
+                snake_name = officer.name.toLowerCase().replace(' ', '_').replace('\'','')
+                if(name_search) {
+                    if(snake_name.includes(name_search))
+                        names.push(`${snake_name}.jpg`)
+                }
+                else
+                        names.push(`${snake_name}.jpg`)
+            })
+        }
+    })
+
+    names.sort().map(name => console.log(name))
+}
