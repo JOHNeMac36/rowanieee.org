@@ -5,12 +5,25 @@ include mixins/footer
 +header()
 body
   +navbar()
-  #about
-    h1 About
-    p
-      | Bibendum nulla. In erat nunc, posuere sed, auctor quis, pulvinar quis, mi. Mauris at est. Phasellus lacinia eros in arcu. Maecenas lobortis, tellus vel gravida tincidunt,
-      | elit erat suscipit arcu, in varius erat risus vel magna. Fusce nec ante quis dolor vestibulum bibendum. Pellentesque sit amet urna. Curabitur eget nisi at lectus placerat
-      | gravida. Vivamus nulla. Donec luctus. Sed quis tellus. Quisque lobortis faucibus mi. Aenean vitae risus ut arcu malesuada ornare. Maecenas nec erat. Sed rhoncus, elit
-      | laoreet sagittis luctus, nulla leo faucibus lectus, vitae accumsan est diam id felis. Nunc dui pede, vestibulum eu, elementum et, gravida quis, sapien. Donec.
+  br
+  .text-center
+    - var eboard_years = []
+    - resources.eboards.forEach(eboard => eboard_years.push(eboard.year))
+    - const current_eboard = resources.eboards[0]
+    - const previous_eboards = resources.eboards.slice(1)
+    h2 Eboard #{current_eboard.year}
 
+  article.grid-container
+    hr
+    .grid-x.grid-margin-x.small-up-2.medium-up-3.large-up-6
+      each officer in current_eboard.officers
+        .cell
+          img.thumbnail(src=`/assets/img/officers_${current_eboard.year}/${officer.name.toLowerCase().replace(' ','_').replace("'","")}.jpg`)
+          h5= officer.position
+          h3= officer.name
+          p= officer.bio ? officer.bio : 'Bio pending'
+          //-a.button.small.expanded.hollow(href='#') Buy
+
+  each year in eboard_years
+    p: a(href=`/eboard//${year}`)=year
   +footer()
