@@ -18,7 +18,7 @@ body
     .grid-x.grid-margin-x.small-up-2.medium-up-3.large-up-6
       each officer in current_eboard.officers
         .cell
-          img.thumbnail(src=`/assets/img/officers_${current_eboard.year}/${officer.name.toLowerCase().replace(' ','_').replace("'","")}.jpg`)
+          img.thumbnail(src=`/assets/img/officers/${current_eboard.year}/${officer.name.toLowerCase().replace(' ','_').replace("'","")}.jpg`)
           h5= officer.position
           h3= officer.name
           p= officer.bio ? officer.bio : 'Bio pending'
