@@ -1,0 +1,167 @@
+[
+  {
+    "year": 2019,
+    "officers": [
+      {
+        "position": "Chair",
+        "name": "Brian Harlow",
+        "bio": "Brian Harlow is a junior Electrical & Computer Engineering major with a Physics minor and an honors concentration. In the past with Rowan IEEE Brian has served as an SGA Representative as well as Activities Chair on the eboard. Outside of engineering, Brian’s biggest hobbies are building PCs, ice hockey, and golf. Computers are a big passion of his and he hopes to find an internship that will help lead him into a career of computer hardware design or embedded systems engineering. He is beyond excited to be at the helm of such an established and respectable club as IEEE and looks forward to a future of building it to be even greater!"
+      },
+      {
+        "position": "Vice Chair",
+        "name": "Will Cronin",
+        "bio": "Will is a Junior ECE with a minor in CS and an Honors Concentration. He has done much for Rowan IEEE, serving as the tournament chair in 2016-2017 and the secretary in 2017-2018. This year he hopes to keep his reputation as the coolest eboard member as he takes on the responsibility of vice-chair. Outside of IEEE, Will is well known as a smash player that's slightly above average. In addition, Will spends what free time he has playing intramural soccer, playing co-op/party games with friends or dealing with his addiction to caffeine."
+      },
+      {
+        "position": "Secretary",
+        "name": "Cameron Bendzynski",
+        "bio": "Cameron Bendzynski is a junior Electrical & Computer Engineering major with a minor in Physics. He is also an active member of the tournament committee, and a proud Eagle Scout. When Cameron isn't busy PC gaming, he's procrastinating his assignments with tabletop games. He will be working with PSEG Nuclear this summer, and is looking to pursue a career in power and energy. Cameron is very excited for what IEEE has in store for this upcoming year."
+      },
+      {
+        "position": "Treasurer",
+        "name": "Allison Gracie",
+        "bio": "Allison Gracie is a sophomore Mechanical Engineering major with a minor in Electrical/Computer engineering. As treasurer of IEEE, she works with the e-board and general members to make sure that the club uses its budget to its fullest potential (also - she is responsible for financing all the free pizza!). Outside of IEEE, Ally is involved with SWE, Admissions Ambassadors, Honors, and AIAA. Besides classes, homework, and clubs, she loves to draw, paint, and hang out with friends. She is excited to be a part of IEEE and help continue its reputation as one of the best clubs on campus!"
+      },
+      {
+        "position": "Activities Chair",
+        "name": "Olga Koturlash",
+        "bio": "Olga Koturlash is a Mechanical Engineering Major at Rowan University. She has a passion for CAD and wants to specialize in Design Engineering. Olga currently works with Rowan IEEE as head of logistics for ProfHacks 2019 while co-leading SIGHT, the Special Interest Group on Humanitarian Technology. As Activities Chair, Olga is looking forward to organizing many of the events that help Rowan IEEE members grow together and form long-lasting friendships. She's excited to get more people involved in IEEE events and hopes to help the club grow."
+      },
+      {
+        "position": "Philadelphia Section Representative",
+        "name": "DJ Stahlberger",
+        "bio": null
+      },
+      {
+        "position": "Webmaster",
+        "name": "John McAvoy",
+        "bio": "John is a senior electrical and computer engineering major currently serving as Webmaster of Rowan IEEE. On his free time he likes tutoring, working on the RAS hexacopter, and doing full stack web development. John plans to pursue a career in software engineering."
+      },
+      {
+        "position": "Public Relations Chair",
+        "name": "Brian Costantino",
+        "bio": "Brian Costantino is a freshman Electrical and Computer Engineer at Rowan University with an intended minor in Mathematics. Brian loves graphic design and marketing, and he is passionate about pursuing a career in Aerospace Engineering. Brian spends his time playing the piano, singing, working out, and going snowboarding, as well as being heavily involved with Profhacks 2019. He is thrilled to be IEEE’s Public Relations Chair and is looking forward to the upcoming years with the club."
+      },
+      {
+        "position": "Sponsorship Chair",
+        "name": "Brody Eller",
+        "bio": null
+      },
+      {
+        "position": "Service Chair",
+        "name": "Fowad Sohail",
+        "bio": "Fowad Sohail is a sophomore Electrical and Computer Engineering major with a minor in Computer Science. Fowad is also a Lead Organizer of ProfHacks 2019, and served as an SGA representative last year. In his free time, Fowad's hobbies include: watching sports, learning about technology and working out. He is a huge soccer fan and loves Arsenal FC. His biggest assets are his tenacity, leadership and his sense of humor. Fowad is very goal oriented person and aspires to make a name for himself, Rowan University and IEEE on a wider stage. He hopes to secure an internship in software or hardware design in the coming years and hopes that IEEE can help him reach his goals."
+      },
+      {
+        "position": "Tournament Chair",
+        "name": "Nick Kabala",
+        "bio": "Nick Kabala is currently a sophomore majoring in Electrical & Computer Engineering here at Rowan. If you manage to catch him when he isn't indulging himself in his studies, you'll most likely find him golfing, playing video games, or brainstorming new games that can be played in a tournament-style setting. With his previous experience as a tournament operator (TO) in his hometown, Nick plans to use his laid back personality and have-fun mentality to contribute towards making IEEE's Gaming Tournaments some of the best the organization has ever held. Nick's paramount goals during his term are to dethrone Vice Chair Will Cronin as IEEE's \"Smash God\", and of course to bring all members together in an environment where they can have fun and be themselves."
+      },
+      {
+        "position": "Fundraising Chair",
+        "name": "Kyle Fisher",
+        "bio": "Kyle Fisher is a sophomore Mechanical Engineering major with an intended minor in Astronomy. One day, he plans to combine his two interests and specialize in Astronautical Engineering. This is his first year as fundraising co-chair in IEEE, and doesn't plan on it being his last. Working with Isiah, he is excited to help the Rowan IEEE to continue providing endless fun. Contact: fisherk5@students.rowan.edu"
+      },
+      {
+        "position": "SGA Representative",
+        "name": "Kevin O'Hare",
+        "bio": "Kevin O’Hare is a Junior Electrical and Computer Engineering Major who has been an active member of IEEE since his freshman year. In the past Kevin has served on the planning committees for SAC 2017 and ProfHacks 2018. Kevin currently serves as a co-lead organizer for ProfHacks 2019. For his first eboard position, Kevin is excited to serve as one of the SGA Representatives for IEEE. In his free time, Kevin enjoys playing video games and hanging out with his friends. He is a huge fan of Philadelphia sports teams. Kevin has interests in renewable energy, electric cars, and systems engineering. He hopes his involvement with IEEE will allow him to form new connections in his field."
+      },
+      {
+        "position": "SGA Representative",
+        "name": "Karlie Naphy",
+        "bio": "Karlie is a junior Electrical & Computer Engineering major with a minor in German Studies who's been involved in IEEE since her freshman year. After being part of the web committee, and then a year as the club's treasurer, Karlie is excited to continue her commitment to IEEE as an SGA Representative. She is also a member of IEEE's sister club Women in Engineering where she is currently the PR Chair. When she has time away from class and homework, she enjoys playing intramural soccer, going to trivia nights in the area, hanging out with friends, and, of course, napping to catch up on sleep whenever she gets the chance."
+      },
+      {
+        "position": "SGA Representative",
+        "name": "Christopher Satriale",
+        "bio": null
+      }
+    ]
+  },
+  {
+    "year": 2018,
+    "officers": [
+      {
+        "position": "Chair",
+        "name": "Jason Fisch",
+        "bio": "Jason Fisch is a junior mechanical engineering major with a love for robotics and innovation. When Jason is not leading the best club on campus, you can find him hiking in national parks and working on his start-up. Jason is very excited to be serving his fellow students as the Chair of Rowan IEEE and organizer of the Rowan Idea Challenge. Previously, Jason served as the Philadelphia Section Student Representative and ProfHacks co-lead. Jason had an amazing time working for Stanley Black and Decker in Towson, Maryland as a Electromechanical Engineering Intern in the Global Tools & Storage division (GTS). Jason is in the process of starting a Formula Electric clinic project at Rowan. Finally, Jason can’t wait to see all the awesome things Rowan IEEE will accomplish this year!"
+      },
+      {
+        "position": "Vice Chair",
+        "name": "Nikola Kosaric",
+        "bio": "Nikola Kosaric is a Junior Electrical and Computer Engineering Major with a love for technology and cars. He also served as a co-lead organizer of Profhacks 2018 and as the former Rowan IEEE co-activities chair. As Vice Chair, Nikola is excited to bring the club to new heights and show all engineering majors what the club can offer. When he isn’t dedicating his time towards IEEE or Profhacks, Nikola can be found wrenching on cars or disassembling whatever electronics can be found lying around. Nikola enjoyed his internship with LockHeed Martin RMS in Moorestown and hopes to pursue a job at Tesla in the future to combine both his passion for cars and technology."
+      },
+      {
+        "position": "Secretary",
+        "name": "Will Cronin",
+        "bio": "Will is a junior Electrical and Computer Engineering major with a minor in computer science. He is also the former Rowan IEEE Tournament Chair from 2017. Will is dedicated to his work in IEEE but is also very laid back. He enjoys putting off his class assignments to feed his video game addiction. When he isn't indulging in gaming or rushing to complete his previously mentioned assignments, he can be found playing the sax, fooling around on photoshop, or occasionally rock climbing. Will is probably best known for his love for gaming and being a spicy meme lord. He is really excited to be more involved in Rowan IEEE this year, especially with the amazing eboard present."
+      },
+      {
+        "position": "Treasurer",
+        "name": "Karlie Naphy",
+        "bio": "Karlie Naphy is a junior Electrical and Computer Engineering major with a minor in German Studies. While also a member of the college’s Women in Engineering club, Karlie focuses most of her time with IEEE, managing reimbursements and advocating for more girls to join the club and the field. You’ll most likely find her in Engineering Hall in line for a bagel, or napping in her apartment between classes. She’s super psyched to be on the E-board this year for IEEE and is excited to be working with everyone in the E-board and in the club."
+      },
+      {
+        "position": "Activities Chair",
+        "name": "Brian Harlow",
+        "bio": "Brian Harlow is a junior year ECE major working on a Physics minor and an honors concentration. Inside of IEEE, Brian is working to help plan ProfHacks 2018 as lead of the Logistics Committee. He is very excited to be a part of the team that helps to bring the community all of the amazing opportunities that IEEE has to offer! As Activities Chair, Brian is very excited to bring all of IEEE’s amazing events to life for another year whether it be already established events like SUMO or new projects to be developed. In his personal time, Brian likes to play hockey, golf, and video games. Computers are a big passion of his, and in the future he hopes to work with companies like Intel or AMD and form a career in computer hardware design. He sees IEEE as a fantastic club and community upon which he can begin his path toward reaching his goals, and looks forward to all the good times to come with the club."
+      },
+      {
+        "position": "Philadelphia Section Representative",
+        "name": "DJ Stahlberger",
+        "bio": null
+      },
+      {
+        "position": "Webmaster",
+        "name": "Philip Quinn",
+        "bio": "Phil is a senior Electrical and Computer Engineering and Computer Science dual major with a minor in Mathematics. He loves to get involved with IEEE's Sumo Robitcs Competitions as well as ProfHacks every year. His professional interests include Machine Learning and Software Engineering. He is excited to now be on the e-board, and even more excited to be its Webmaster."
+      },
+      {
+        "position": "Public Relations Chair",
+        "name": "Quinn McHugh",
+        "bio": "Quinn McHugh, also known as \"Q-tip\", \"The Mighty Quinn\", or \"Quinn the Eskimo\", is an honors senior mechanical engineering major with a minor in computer science who is excited to serve as the public relations chair of Rowan IEEE for the second year in a row. When he's not designing eye poppin' banners, t-shirts, and banners for the student chapter or maintaining the Rowan IEEE social media pages, Quinn works as a resident assistant at the Whitney Center and is passionate about snowboarding, cycling, and climate change. Last summer, Quinn worked as a VBA developer for a water utility company called Ridgewood Water and hopes to pursue a career in the sustainable energy or product design industry."
+      },
+      {
+        "position": "Sponsorship Chair",
+        "name": "Neeve Kadosh",
+        "bio": "Neeve Kadosh is a sophomore Electrical and Computer Engineer with a minor in Physics at Rowan University. Neeve is addicted to networking and believes self driving cars are the future. He is passionate about pursuing a career at Google and has even attached his resume: https://tinyurl.com/y9dbkftm. Neeve has spent most of his life loving soccer, traveling, playing the violin, and going snowboarding. He is thrilled to be IEEE’s first ever Sponsorship Chair and is looking forward to the next four years with the club."
+      },
+      {
+        "position": "Service Chair",
+        "name": "John McAvoy",
+        "bio": "John is a senior electrical and computer engineering major currently serving as service chair of Rowan IEEE. On his free time he likes tutoring, working on the RAS hexacopter, and doing web development. John plans to pursue a career in software engineering."
+      },
+      {
+        "position": "Tournament Chair",
+        "name": "Nate Hoffman",
+        "bio": "Nate enjoys being a junior honors student in the Electrical and Computer Engineering program, where he loves learning new skills to add to his toolbox. By day, helping other students with projects and working on homework occupy his time. By night, Nate is always working on developing large-scale software using techniques learned both inside and outside the classroom. As tournament chair, he is slowly stepping into more formal leadership positions, and hopes to help make the Rowan IEEE student branch even better."
+      },
+      {
+        "position": "Fundraising Co-Chair",
+        "name": "Kyle Fisher",
+        "bio": "Kyle Fisher is a sophomore Mechanical Engineering major with an intended minor in Astronomy. One day, he plans to combine his two interests and specialize in Astronautical Engineering. This is his first year as fundraising co-chair in IEEE, and doesn't plan on it being his last. Working with Isiah, he is excited to help the Rowan IEEE to continue providing endless fun. Contact: fisherk5@students.rowan.edu"
+      },
+      {
+        "position": "Fundraising Co-Chair",
+        "name": "Isaiah Salazar",
+        "bio": "Isaiah Salazar is a sophomore Electrical and Computer Engineering major who is happy to serve as a Fundraising Co-Chair this year. Isaiah interned at Rowan's Virtual Lab over the summer and is currently interning at Rowan's Center for Research and Education in Advanced Transportation Engineering Systems. He first got involved with IEEE at this year's Sumo Robotics competition and excited to contribute to the club further as a member of the executive board."
+      },
+      {
+        "position": "SGA Representative",
+        "name": "Sean Prendergast",
+        "bio": "Sean Prendergast is a sophomore Electrical & Computer Engineering Major and is also currently serving as one of IEEE’s SGA Representatives. Although he commutes from Blackwood NJ, he usually finds himself spending most of his time on campus anyway, as he has enjoyed every second of being an ECE at Rowan. He’s often found working on projects or homework with his fellow peers or just having a good time hanging out with all his friends. Outside of school, Sean enjoys sports, as well as working out, playing video games, watching movies and volunteering to help his community. Sean aspires to have a lasting impact on IEEE through his role as an SGA representative and is looking forward to having a phenomenal year with IEEE. He hopes that one day he’ll be able to inspire people to just be themselves and to never be afraid of chasing their goals and taking risks, he is also aiming to start his own business one day."
+      },
+      {
+        "position": "SGA Representative",
+        "name": "Kieran O'Connor",
+        "bio": "Kieran O’Connor is a junior Electrical and Computer Engineering student and an SGA representative for IEEE. He has been apart of Activities Committee for IEEE and Fundraising Committee for the Rowan Fishing Team. Kieran has an interest in clean renewable energies and is using his position to get more involved in the organization."
+      },
+      {
+        "position": "SGA Representative",
+        "name": "Fowad Sohail",
+        "bio": "Fowad Sohail is a sophomore Electrical and Computer Engineering major with a minor in Computer Science. Fowad is active in ProfHacks and serves as the head of the web committee. In addition, he has volunteered at many IEEE events, including the Sumo Robotics Competitions. He will serve as an SGA Rep in the coming semesters. In his free time, Fowad's hobbies include: watching sports, learning about technology and working out. He is a huge soccer fan and loves Arsenal FC. With this comes an intense hate for Tottenham Hotspur and Manchester United. His biggest assets are his tenacity, leadership and his sense of humor. Fowad is very goal oriented and aspires to make a name for himself, Rowan University and IEEE on a wider stage. He hopes to secure an internship in software or hardware design in the coming years and hopes that IEEE can help him reach his goals."
+      }
+    ]
+  }
+]

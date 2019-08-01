@@ -11,6 +11,11 @@ function compile_pug(cb) {
     .pipe(pug({
       pretty: true,
       debug: false,
+      data: {
+        resources: {
+          eboards: require('./src/resources/eboards.json')
+        }
+      }
     }))
     .pipe(rename({
       dirname: '',
