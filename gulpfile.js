@@ -2,7 +2,9 @@ const { src, dest, series, parallel, watch } = require('gulp');
 const path = require('path')
 const pug = require('gulp-pug')
 const rename = require('gulp-rename')
-const del = require("del")
+const del = require('del')
+const vinylPaths = require('vinyl-paths')
+const fs = require('fs')
 
 const OUTPUT_DIR = path.resolve(__dirname, 'dist')
 
@@ -26,8 +28,14 @@ function compile_pug(cb) {
     .on('end', () => cb())
 }
 
+function compile_assets(cb) {
+  src('src/assets/img/**')
+    .pipe(dest(path.resolve(OUTPUT_DIR, 'assets', 'img')))
+    .on('end', () => cb())
+}
+
 function watch_files(cb) {
-  watch('src/**', compile_pug);
+  watch('src/**', parallel(compile_pug, compile_assets));
   cb()
 }
 
@@ -42,7 +50,12 @@ function startServer(cb) {
 
 }
 
+function clean(cb) {
+  del(OUTPUT_DIR)
+    .then(() => cb())
+}
 
-exports.default = compile_pug
+exports.default = series(clean, parallel(compile_pug, compile_assets))
 exports.start_server = startServer
-exports.watch = series(parallel(compile_pug, startServer), watch_files)
+exports.watch = series(clean, parallel(compile_pug, compile_assets), startServer, watch_files)
+exports.clean = clean
