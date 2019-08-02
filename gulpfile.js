@@ -9,7 +9,7 @@ const fs = require('fs')
 const OUTPUT_DIR = path.resolve(__dirname, 'dist')
 
 function compile_pug(cb) {
-  src(['src/views/**.pug', '!src/views/mixins/**.pug'])
+  const pipe = src(['src/views/**.pug', '!src/views/mixins/**.pug'])
     .pipe(pug({
       pretty: true,
       debug: false,
@@ -19,11 +19,11 @@ function compile_pug(cb) {
         }
       }
     }))
+    .on('error', err => { console.log(err.message); pipe.emit('end')})
     .pipe(rename({
       dirname: '',
       extname: '.html'
     }))
-    .on('error', err => {console.log(err.message); this.emit('end')})
     .pipe(dest(OUTPUT_DIR))
     .on('end', () => cb())
 }
