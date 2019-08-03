@@ -1,8 +1,6 @@
 language: node_js
 
 script:
-  # test build
-  - gulp build
   # build docs
   - gulp docs
   # disable gitub jekyll
