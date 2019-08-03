@@ -1,14 +1,12 @@
 language: node_js
 
 script:
+  # test build
+  - gulp build
   # build docs
-  - npx gulp docs
+  - gulp docs
   # disable gitub jekyll
   - touch docs/.nojekyll
-
-install:
-  - npm install
-  - npm install -g npx
 
 deploy:
   provider: pages
