@@ -9,10 +9,10 @@
   "scripts": {
     "build": "npx gulp",
     "start": "serve dist",
-    "dev": "npx gulp watch"
+    "dev": "npx gulp watch",
+    "docs": "npx gulp docs"
   },
   "devDependencies": {
-    "babel": "^6.23.0",
     "del": "^5.0.0",
     "gulp": "^4.0.2",
     "gulp-pug": "^4.0.1",
