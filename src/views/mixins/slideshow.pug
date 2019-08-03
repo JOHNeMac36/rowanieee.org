@@ -12,10 +12,10 @@ mixin slideshow(...slides)
         | ▶︎
       each slide, i in slides
         li.orbit-slide(data-slide=i style=i==0 ? '' : 'display: none;')
-          img.orbit-image(src=slide.src alt=slide.description)
+          img.orbit-image(src=slide.src, alt=slide.caption)
           figcaption.orbit-caption= slide.caption
     nav.orbit-bullets
       each slide, i in slides
         button(data-slide=i)
-          span.show-for-sr= slide.description
+          span.show-for-sr= slide.caption
       span.show-for-sr Current Slide
