@@ -6,7 +6,7 @@ install:
 
 script:
   # build docs
-  - npx docs
+  - npm run docs
   # disable gitub jekyll
   - touch docs/.nojekyll
 
