@@ -5,12 +5,46 @@ include mixins/footer
 +header()
 body
   +navbar()
-  #about
-    h1 About
-    p
-      | Bibendum nulla. In erat nunc, posuere sed, auctor quis, pulvinar quis, mi. Mauris at est. Phasellus lacinia eros in arcu. Maecenas lobortis, tellus vel gravida tincidunt,
-      | elit erat suscipit arcu, in varius erat risus vel magna. Fusce nec ante quis dolor vestibulum bibendum. Pellentesque sit amet urna. Curabitur eget nisi at lectus placerat
-      | gravida. Vivamus nulla. Donec luctus. Sed quis tellus. Quisque lobortis faucibus mi. Aenean vitae risus ut arcu malesuada ornare. Maecenas nec erat. Sed rhoncus, elit
-      | laoreet sagittis luctus, nulla leo faucibus lectus, vitae accumsan est diam id felis. Nunc dui pede, vestibulum eu, elementum et, gravida quis, sapien. Donec.
+  br
+  .text-center
+    h2 About
+      span#year #{default_year}
+  article.grid-container
+    hr
+    .grid-x.align-center
+      .cell.medium-12#what_is_ieee
+        h3 What is IEEE?
+        p
+          | IEEE, pronounced "Eye-triple-E", stands for the Institute of Electrical and Electronics Engineers. The association is chartered under this name and it is the full legal
+          | name. IEEE, an association dedicated to advancing innovation and technological excellence for the benefit of humanity, is the world's largest technical professional
+          | society. It is designed to serve professionals involved in all aspects of the electrical, electronic and computing fields and related areas of science and technology
+          | that underlie modern civilization. For more information, visit the 
+          a(href="http://ieee.org/", target="_blank") official IEEE website
+          |  or 
+          a(href="https://en.wikipedia.org/wiki/Institute_of_Electrical_and_Electronics_Engineers", target="_blank") IEEE Wikipedia page.
 
+      .cell.medium-12#how_to_join
+        h3 How to Join
+        h4 How do I join IEEE?
+        p
+          | To join the national IEEE, you just go to the 
+          a(href="https://www.ieee.org/membership_services/membership/join/index.html") Join IEEE
+          |  page on the official website and apply online. Once you've made an official account, student membership is
+          | $32.00/year (subjec to change), and any other subscriptions are extra.
+        h4 Membership Eligibility
+        p
+          | To qualify for an IEEE membership, students must carry at least 50% of a full-time academic program's course of study. For more detailed information, please see
+          | the 
+          a(href="https://www.ieee.org/membership_services/membership/join/qualifications.html") Membership Qualifications
+          |  page on the official IEEE website.
+        h4 Rowan's Student Branch
+        p.
+          Joining Rowan's IEEE Student branch is absolutely free! All you have to do is attend a meeting and sign in. Meeting dates will always be announced beforehand.
+      .cell.medium-12#how_to_join
+        h3 Constitution
+        h4 Rowan IEEE Student Branch
+        p
+          | View the organization's 
+          a(href="https://rowanieee.org/IEEEConstitution.pdf", target="_blank") constitution
+          | .
   +footer()
