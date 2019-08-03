@@ -5,6 +5,7 @@ const rename = require('gulp-rename')
 const del = require('del')
 const vinylPaths = require('vinyl-paths')
 const fs = require('fs')
+const typescript = require('gulp-typescript')
 
 const OUTPUT_DIR = path.resolve(__dirname, 'dist')
 
@@ -28,6 +29,18 @@ function compile_pug(cb) {
     .on('end', () => cb())
 }
 
+function compile_ts(cb) {
+  const pipe = src('src/scripts/**.ts')
+    .pipe(typescript())
+    .on('error', err => { console.log(err.message); pipe.emit('end')})
+    .pipe(rename({
+      dirname: '',
+      extname: '.js'
+    }))
+    .pipe(dest(path.resolve(OUTPUT_DIR, 'assets', 'js')))
+    .on('end', () => cb())
+}
+
 function compile_assets(cb) {
   src('src/assets/img/**')
     .pipe(dest(path.resolve(OUTPUT_DIR, 'assets', 'img')))
@@ -35,7 +48,9 @@ function compile_assets(cb) {
 }
 
 function watch_files(cb) {
-  watch('src/**', parallel(compile_pug, compile_assets));
+  watch('src/views/**.pug', compile_pug);
+  watch('src/scripts/**.ts', compile_ts);
+  watch('src/assets/**', compile_assets);
   cb()
 }
 
@@ -55,7 +70,7 @@ function clean(cb) {
     .then(() => cb())
 }
 
-exports.default = series(clean, parallel(compile_pug, compile_assets))
+exports.default = series(clean, parallel(compile_pug, compile_ts, compile_assets))
 exports.start_server = startServer
-exports.watch = series(clean, parallel(compile_pug, compile_assets), startServer, watch_files)
+exports.watch = series(clean, parallel(compile_pug, compile_ts, compile_assets), startServer, watch_files)
 exports.clean = clean

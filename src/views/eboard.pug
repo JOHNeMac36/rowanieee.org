@@ -7,23 +7,25 @@ body
   +navbar()
   br
   .text-center
-    - var eboard_years = []
-    - resources.eboards.forEach(eboard => eboard_years.push(eboard.year))
-    - const current_eboard = resources.eboards[0]
-    - const previous_eboards = resources.eboards.slice(1)
-    h2 Eboard #{current_eboard.year}
-
+    - const eboards = resources.eboards.sort().reverse()
+    - const eboard_years = eboards.map(e => e.year).sort().reverse()
+    - default_year = Math.max(...eboard_years)
+    h2 Eboard&nbsp;
+      span#year #{default_year}
   article.grid-container
     hr
-    .grid-x.grid-margin-x.small-up-2.medium-up-3.large-up-6
-      each officer in current_eboard.officers
-        .cell
-          img.thumbnail(src=`/assets/img/officers/${current_eboard.year}/${officer.name.toLowerCase().replace(' ','_').replace("'","")}.jpg`)
-          h5= officer.position
-          h3= officer.name
-          p= officer.bio ? officer.bio : 'Bio pending'
-          //-a.button.small.expanded.hollow(href='#') Buy
+    ul.position-right
+      each year in eboard_years
+        li: a(href=`/eboard/#${year}`)=year
+    each eboard, index in eboards
+      .grid-x.grid-margin-x.small-up-2.medium-up-3.large-up-4(id=`eboard_${eboard.year}`, style= (eboard.year === default_year) ? 'display: flex' : 'display: none;')
+        each officer in eboard.officers
+          .cell
+            img.thumbnail(src=`/assets/img/officers/${eboard.year}/${officer.name.toLowerCase().replace(' ','_').replace("'","")}.jpg`)
+            h5= officer.position
+            h3= officer.name
+            p= officer.bio
 
-  each year in eboard_years
-    p: a(href=`/eboard//${year}`)=year
+
   +footer()
+  script(src="/assets/js/eboard.js")
