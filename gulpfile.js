@@ -6,6 +6,7 @@ const del = require('del')
 const vinylPaths = require('vinyl-paths')
 const fs = require('fs')
 const typescript = require('gulp-typescript')
+const typedoc = require('gulp-typedoc')
 
 const OUTPUT_DIR = path.resolve(__dirname, 'dist')
 
@@ -70,7 +71,21 @@ function clean(cb) {
     .then(() => cb())
 }
 
+function docs(cb) {
+  src(['README.md', './src/scripts/**.ts'])
+    .pipe(typedoc({
+      target: "es5",
+      includeDeclarations: true,
+      out: "./docs",
+      name: "rowanieee.org",
+      ignoreCompilerErrors: false,
+      version: true,
+    }))
+    .on('end', () => cb())
+}
+
 exports.default = series(clean, parallel(compile_pug, compile_ts, compile_assets))
 exports.start_server = startServer
 exports.watch = series(clean, parallel(compile_pug, compile_ts, compile_assets), startServer, watch_files)
 exports.clean = clean
+exports.docs = docs
