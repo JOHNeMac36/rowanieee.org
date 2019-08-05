@@ -12,10 +12,11 @@ body
       .title-bar-title Menu
     .title-bar-right
         - var slides = []
-        - slides.push({src:'https://placehold.it/2000x750&text=1st', caption:'First', description:'First'})
-        - slides.push({src:'https://placehold.it/2000x750&text=2nd', caption:'Second', description:'Second'})
-        - slides.push({src:'https://placehold.it/2000x750&text=3rd', caption:'Third', description:'Third'})
-        - slides.push({src:'https://placehold.it/2000x750&text=4th', caption:'Fourth', description:'Fourth'})
+        - slides.push({src:'/assets/img/slideshow/2019_eboard_group_photo.jpg', caption:'Eboard 2019'})
+        - slides.push({src:'/assets/img/slideshow/2019_sac_group.jpg', caption:'Student Activities Conference (SAC) 2019'})
+        - slides.push({src:'/assets/img/slideshow/2019_sac_awards.jpg', caption:'Winning Competitions as SAC 2019', description:'Second'})
+        - slides.push({src:'/assets/img/slideshow/2019_sight_pilot_day.jpg', caption:'SIGHT Pilot Day 2019'})
+        - slides.push({src:'/assets/img/slideshow/2019_profhacks_leads.jpg', caption:'ProfHacks 2019 Event Leads'})
   +slideshow(...slides)
-  br
+    br
   +footer()
