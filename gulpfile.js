@@ -8,6 +8,7 @@ const fs = require('fs')
 const typescript = require('gulp-typescript')
 const typedoc = require('gulp-typedoc')
 const eslint = require('gulp-eslint')
+const pugLinter = require('gulp-pug-linter')
 
 const OUTPUT_DIR = path.resolve(__dirname, 'dist')
 
@@ -85,7 +86,7 @@ function docs(cb) {
     .on('end', () => cb())
 }
 
-function lint(cb) {
+function lint_ts(cb) {
   src('src/scripts/**.ts')
     .pipe(eslint({fix: true}))
     .pipe(eslint.format())
@@ -94,9 +95,15 @@ function lint(cb) {
     .on('end', () => cb())
 }
 
+function lint_pug() {
+  return src('src/views/**/*.pug')
+    .pipe(pugLinter({reporter: 'default', failAfterError: true}))
+    .on('error', err => { console.log(err.message); pipe.emit('end')})
+}
+
 exports.default = series(clean, parallel(compile_pug, compile_ts, compile_assets))
 exports.start_server = startServer
 exports.watch = series(clean, parallel(compile_pug, compile_ts, compile_assets), startServer, watch_files)
 exports.clean = clean
 exports.docs = docs
-exports.lint = lint
+exports.lint = parallel(lint_ts, lint_pug)
