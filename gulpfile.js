@@ -7,6 +7,7 @@ const vinylPaths = require('vinyl-paths')
 const fs = require('fs')
 const typescript = require('gulp-typescript')
 const typedoc = require('gulp-typedoc')
+const eslint = require('gulp-eslint')
 
 const OUTPUT_DIR = path.resolve(__dirname, 'dist')
 
@@ -84,8 +85,18 @@ function docs(cb) {
     .on('end', () => cb())
 }
 
+function lint(cb) {
+  src('src/scripts/**.ts')
+    .pipe(eslint({fix: true}))
+    .pipe(eslint.format())
+    .pipe(dest('src/scripts'))
+    .on('error', err => { console.log(err.message); pipe.emit('end')})
+    .on('end', () => cb())
+}
+
 exports.default = series(clean, parallel(compile_pug, compile_ts, compile_assets))
 exports.start_server = startServer
 exports.watch = series(clean, parallel(compile_pug, compile_ts, compile_assets), startServer, watch_files)
 exports.clean = clean
 exports.docs = docs
+exports.lint = lint
