@@ -106,4 +106,5 @@ exports.start_server = startServer
 exports.watch = series(clean, parallel(compile_pug, compile_ts, compile_assets), startServer, watch_files)
 exports.clean = clean
 exports.docs = docs
-exports.lint = parallel(lint_ts, lint_pug)
+exports.lint_ts = lint_ts
+exports.lint_pug = lint_pug
