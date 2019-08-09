@@ -2,4 +2,4 @@
 Rowan IEEE Student Branch Website
 
 ## Github Pages
-[rowanieee.github.io/rowanieee.org](rowanieee.github.io/rowanieee.org)
+[rowanieee.github.io/rowanieee.org](http://rowanieee.github.io/rowanieee.org)
