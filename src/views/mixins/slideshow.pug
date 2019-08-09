@@ -16,6 +16,6 @@ mixin slideshow(...slides)
           figcaption.orbit-caption= slide.caption
     nav.orbit-bullets
       each slide, i in slides
-        button(data-slide=i)
+        button(data-slide=i class=i==0 ? 'is-active' : '')
           span.show-for-sr= slide.caption
       span.show-for-sr Current Slide

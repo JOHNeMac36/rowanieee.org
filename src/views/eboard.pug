@@ -2,9 +2,11 @@ include mixins/header
 include mixins/navbar
 include mixins/footer
 
-+header()
+- pageName = 'E-Board'
+
++header(pageName)
 body
-  +navbar()
+  +navbar(pageName)
   br
   .text-center
     - const eboards = resources.eboards.sort().reverse()

@@ -2,10 +2,12 @@ include mixins/header
 include mixins/navbar
 include mixins/footer
 
-+header()
+- pageName = 'Events'
+
++header(pageName)
 body
-  +navbar()
-  #about
+  +navbar(pageName)
+  #events
     h1 About
     p
       | Bibendum nulla. In erat nunc, posuere sed, auctor quis, pulvinar quis, mi. Mauris at est. Phasellus lacinia eros in arcu. Maecenas lobortis, tellus vel gravida tincidunt,

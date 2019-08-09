@@ -2,9 +2,11 @@ include mixins/header
 include mixins/navbar
 include mixins/footer
 
-+header()
+- pageName = 'About'
+
++header(pageName)
 body
-  +navbar()
+  +navbar(pageName)
   br
   .text-center
     h2 About

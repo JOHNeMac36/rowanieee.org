@@ -14,7 +14,6 @@ mixin navbar(pageName)
       {name: "ProfBots", href: "/profbots"},
       {name: "Tutoring", href: "/tutoring"},
       {name: "Get Involved", href: "/get_involved"},
-      {name: "Contact Us", href: "/contact"},
     ]
 
   .top-bar#mainNavigation
@@ -22,5 +21,5 @@ mixin navbar(pageName)
       ul.menu.vertical.medium-horizontal
         li.menu-text.hide-for-small-only Rowan IEEE Student Branch
         each item in navItems
-          li: a(href=item.href)=item.name
+          li(class=pageName === item.name ? 'is-active' : ''): a(href=item.href)=item.name
             .top-bar-right
