@@ -13,8 +13,8 @@ const sass = require('gulp-sass')
 
 const OUTPUT_DIR = path.resolve(__dirname, 'dist')
 
-function compile_pug(cb) {
-  const pipe = src(['src/views/**.pug', '!src/views/mixins/**.pug'])
+function compile_pug() {
+  return src(['src/views/**.pug', '!src/views/mixins/**.pug'])
     .pipe(pug({
       pretty: true,
       debug: false,
@@ -30,7 +30,6 @@ function compile_pug(cb) {
       extname: '.html'
     }))
     .pipe(dest(OUTPUT_DIR))
-    .on('end', () => cb())
 }
 
 function compile_ts(cb) {
@@ -62,8 +61,9 @@ function compile_assets(cb) {
 }
 
 function watch_files(cb) {
-  watch('src/views/**.pug', compile_pug);
-  watch('src/scripts/**.ts', compile_ts);
+  watch('src/views/**/*.pug', compile_pug);
+  watch('src/scripts/**/*.ts', compile_ts);
+  watch('src/scripts/**/*.sass', compile_sass);
   watch('src/assets/**', compile_assets);
   cb()
 }
