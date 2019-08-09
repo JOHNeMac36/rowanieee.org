@@ -9,6 +9,7 @@ const typescript = require('gulp-typescript')
 const typedoc = require('gulp-typedoc')
 const eslint = require('gulp-eslint')
 const pugLinter = require('gulp-pug-linter')
+const sass = require('gulp-sass')
 
 const OUTPUT_DIR = path.resolve(__dirname, 'dist')
 
@@ -42,6 +43,16 @@ function compile_ts(cb) {
     }))
     .pipe(dest(path.resolve(OUTPUT_DIR, 'assets', 'js')))
     .on('end', () => cb())
+}
+
+function compile_sass() {
+  return src('src//styles/*.sass')
+    .pipe(sass())
+    .pipe(rename({
+      dirname: '',
+      extname: '.css'
+    }))
+    .pipe(dest(path.resolve(OUTPUT_DIR, 'assets', 'css')))
 }
 
 function compile_assets(cb) {
@@ -101,9 +112,9 @@ function lint_pug() {
     .on('error', err => { console.log(err.message); pipe.emit('end')})
 }
 
-exports.default = series(clean, parallel(lint_ts, lint_pug), parallel(compile_pug, compile_ts, compile_assets))
+exports.default = series(clean, parallel(lint_ts, lint_pug), parallel(compile_pug, compile_ts, compile_sass, compile_assets))
 exports.start_server = startServer
-exports.watch = series(clean, parallel(compile_pug, compile_ts, compile_assets), startServer, watch_files)
+exports.watch = series(clean, parallel(compile_pug, compile_ts, compile_sass, compile_assets), startServer, watch_files)
 exports.clean = clean
 exports.docs = docs
 exports.lint_ts = lint_ts
