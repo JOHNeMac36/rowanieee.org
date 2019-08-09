@@ -5,12 +5,133 @@ include mixins/footer
 +header()
 body
   +navbar()
-  #about
-    h1 About
-    p
-      | Bibendum nulla. In erat nunc, posuere sed, auctor quis, pulvinar quis, mi. Mauris at est. Phasellus lacinia eros in arcu. Maecenas lobortis, tellus vel gravida tincidunt,
-      | elit erat suscipit arcu, in varius erat risus vel magna. Fusce nec ante quis dolor vestibulum bibendum. Pellentesque sit amet urna. Curabitur eget nisi at lectus placerat
-      | gravida. Vivamus nulla. Donec luctus. Sed quis tellus. Quisque lobortis faucibus mi. Aenean vitae risus ut arcu malesuada ornare. Maecenas nec erat. Sed rhoncus, elit
-      | laoreet sagittis luctus, nulla leo faucibus lectus, vitae accumsan est diam id felis. Nunc dui pede, vestibulum eu, elementum et, gravida quis, sapien. Donec.
+  br
+  .text-center
+    h2 ProfBots
+    h3 A Global Sumo Robotics Competition
+    p  Sumo robotics is a competition where tiny robots try to push each other out of a ring. It's a way to learn programming and hardware.
+
+    iframe(width="560", height="315", src="https://www.youtube.com/embed/OelioyqopUw", frameborder="0", allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", allowfullscreen)
+
+  article.grid-container
+    hr
+    .grid-x.align-center
+      .cell.medium-12
+        h3 Kit Competition
+        p
+          ul
+            li
+              | Every team will have the same hardware. It can be purchased, fully assembled
+              a(href='https://www.pololu.com/product/3126') here
+              | .
+            li
+              | For anyone looking for more of a challenge, the disassembled kit can be found
+              a(href='https://www.pololu.com/product/3124')  here 
+              | and the motors for it can be found
+              a(href='https://www.pololu.com/product/3074')  here 
+              | .
+            li The kit can be programmed from the Arduino IDE
+
+      .cell.medium-12
+        h3 Prizes
+        p
+          ul
+            li First Place: $250
+            li Second Place: $150
+            li Third Place: $100
+            | Prizes will be awarded in the form of a VISA gift card.
+
+      .cell.medium-12
+        h3 Prizes
+        p
+          | In the kit competition, you use a standard hardware kit and just change the software running on the device. This allows anyone from anywhere in the world to
+          | participate. We're opening this competition to everyone to compete remotely.
+
+    .grid-x.align-center
+      .cell.medium-12
+        h3 Scratch Competition
+        p
+          | Teams will design their own robots or modify their kit bots to create their own fighting machines to dominate the dohyo. Robots must follow restrictions found in
+          | the rules below.
+
+      .cell.medium-12
+        h3 Prizes
+        p
+          ul
+            li First Place: $500
+            li Second Place: $250
+            li Third Place: $150
+            li Presentation Award: $100
+
+      .cell.medium-12
+        h3 Additional Information
+        p
+          | The full document of rules is available below.
+          a(href='https://drive.google.com/file/d/1jG_XxDFsDCKF5whVIpT4CCwwO7_XOP3j/view')  See kit competition rules 
+          a(href='https://drive.google.com/file/d/1yN0NJsPamRFb6FxgXYNatHCuQLozvS2K/view')  See scratch competition rules 
+          | You must ensure your robot is in full compliance of the rules or you will not be allowed to compete.
+
+    .grid-x.align-center
+      .cell.medium-12
+        h3 Sponsors
+        p
+          | This could be you! Contact us at
+          a(href="mailto:ieee@rowan.edu")  ieee@rowan.edu
+          | if interested in sponsoring this event.
+
+    .grid-x.align-center
+      .cell.medium-12
+        h3 FAQ
+
+      .cell.medium-12
+        h3 What is a sumo bot?
+        p A sumo bot in is a fully autonomous robot designed to push an opposing sumo robot out of the ring or dohyo.
+
+      .cell.medium-12
+        h3 What is the difference between the kit competition and the scratch competition?
+        p
+          | In the kit competition, only robots built from the specified sumo bot kit will be allowed to compete. This competition is all about the code and how "smart" you
+          | can make your bot. In the scratch competition, any robot built within the specification will be allowed to compete. This competition is where you'll be able to put
+          | your hardware smarts to the test in addition to coding the smartest robot.
+
+      .cell.medium-12
+        h3 Can I enter a kit bot in the scratch competition?
+        p YES! It's very common for teams to modify their kit and re-enter it in the scratch competition or enter the exact same kit bot in both competitions.
+
+      .cell.medium-12
+        h3 Who can enter the competition?
+        p All high school, undergraduate, and graduate students are welcome to attend.
+
+      .cell.medium-12
+        h3 Where should I park?
+        p
+          | For those of you in the area, you can park right next to Rowan Hall in Lot D. For those of you overseas, you can park yourself right in front of your computer and
+          | watch the competition over a live stream. You can look at
+          a(href="https://sumo.rowanieee.org/map.pdf")  the campus map.
+
+      .cell.medium-12
+        h3 How much does it cost to enter?
+        p It's free to enter. The only expense you'll have is the cost of the bot if you choose to purchase your own.
+
+      .cell.medium-12
+        h3 What should I bring?
+        p You're not required to bring anything except your bot, but it may be wise to bring a laptop to modify your code during intermission.
+
+      .cell.medium-12
+        h3 What shouldn't I bring?
+        p Any form of weapons, drugs, or alcohol are strictly prohibited.
+
+      .cell.medium-12
+        h3 Do I have to be a national member of IEEE to enter?
+        p
+          | No. Non-members are encouraged to enter, but only national members of IEEE will be able to apply for funding.
+          a(href="kit_rules") See the kit competition rules
+          | for more information.
+
+      .cell.medium-12
+        h3 What if my question wasn't answered here?
+        p
+          | If you have any questions or concerns, don't hesitate to contact
+          a(href="mailto:harlowb6@students.rowan.edu")  Brian Harlow.
 
   +footer()
