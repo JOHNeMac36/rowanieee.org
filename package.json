@@ -8,7 +8,7 @@
   "license": "GPL-3.0-or-later",
   "scripts": {
     "build": "npx gulp",
-    "start": "serve dist",
+    "start": "npx serve dist",
     "dev": "npx gulp watch",
     "docs": "npx gulp docs"
   },
