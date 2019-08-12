@@ -45,7 +45,7 @@ function compile_ts(cb) {
 }
 
 function compile_sass() {
-  return src('src//styles/*.sass')
+  return src('src//styles/*.scss')
     .pipe(sass())
     .pipe(rename({
       dirname: '',
