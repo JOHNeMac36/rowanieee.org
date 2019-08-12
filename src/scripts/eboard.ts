@@ -37,9 +37,9 @@ function toggleEboard(selectedYear: number, availibleYears: number[]): void {
 }
 
 // Run whenever page fist loads or when selected eboard year changes
-['DOMContentLoaded', 'hashchange'].map((event): void => window.addEventListener(event, async (): Promise<void> => {
+['DOMContentLoaded', 'hashchange'].map((event): void => window.addEventListener(event, (): void => {
     const yearHash: number = parseInt(window.location.hash.substring(1), 10);
     const availibleYears: number[] = getAvailibleYears();
-    const selectedYear: number = await getSelectedYear(yearHash, availibleYears);
+    const selectedYear: number = getSelectedYear(yearHash, availibleYears);
     toggleEboard(selectedYear, availibleYears);
 }));
