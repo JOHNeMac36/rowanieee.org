@@ -10,6 +10,7 @@
     "build": "npx gulp",
     "start": "npx serve dist",
     "dev": "npx gulp watch",
+    "clean": "npx gulp clean",
     "docs": "npx gulp docs"
   },
   "devDependencies": {
