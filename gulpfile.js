@@ -93,6 +93,7 @@ function docs(cb) {
       includeDeclarations: true,
       out: './docs',
       name: 'rowanieee.org',
+      readme: 'README.md',
       ignoreCompilerErrors: false,
       version: true,
     }))
