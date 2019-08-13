@@ -1,17 +1,18 @@
 const {
-  src, dest, series, parallel, watch,
+  dest, parallel, series, src, watch,
 } = require('gulp');
+
+const del = require('del');
+const eslint = require('gulp-eslint');
+const http = require('http');
 const path = require('path');
 const pug = require('gulp-pug');
-const rename = require('gulp-rename');
-const del = require('del');
-const typescript = require('gulp-typescript');
-const typedoc = require('gulp-typedoc');
-const eslint = require('gulp-eslint');
 const pugLinter = require('gulp-pug-linter');
+const rename = require('gulp-rename');
 const sass = require('gulp-sass');
 const serveHandler = require('serve-handler');
-const http = require('http');
+const typedoc = require('gulp-typedoc');
+const typescript = require('gulp-typescript');
 
 const OUTPUT_DIR = path.resolve(__dirname, 'dist');
 
