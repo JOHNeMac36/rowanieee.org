@@ -11,6 +11,8 @@ before_script:
   - npm install -g gulp-cli
 
 script:
+  # build app
+  - gulp
   # build docs
   - gulp docs
   # disable gitub jekyll
