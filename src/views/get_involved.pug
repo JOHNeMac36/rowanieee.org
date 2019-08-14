@@ -6,13 +6,43 @@ include mixins/footer
 
 +header(pageName)
 body
-  +navbar(pageName)
-  #get_involved
-    h1 About
-    p
-      | Bibendum nulla. In erat nunc, posuere sed, auctor quis, pulvinar quis, mi. Mauris at est. Phasellus lacinia eros in arcu. Maecenas lobortis, tellus vel gravida tincidunt,
-      | elit erat suscipit arcu, in varius erat risus vel magna. Fusce nec ante quis dolor vestibulum bibendum. Pellentesque sit amet urna. Curabitur eget nisi at lectus placerat
-      | gravida. Vivamus nulla. Donec luctus. Sed quis tellus. Quisque lobortis faucibus mi. Aenean vitae risus ut arcu malesuada ornare. Maecenas nec erat. Sed rhoncus, elit
-      | laoreet sagittis luctus, nulla leo faucibus lectus, vitae accumsan est diam id felis. Nunc dui pede, vestibulum eu, elementum et, gravida quis, sapien. Donec.
+  +navbar()
+  br
+  .text-center
+    h2 Get Involved with IEEE
+  article.grid-container
+    hr
+    .grid-x.align-center
+      .cell.medium-12#sight
+        h3 IEEE SIGHT: Special Interest Group on Humanitarian Technology
+        p
+          | SIGHT is an IEEE service initiative that aims to solve local societal issues using technological development. We`d like to establish a SIGHT group here at Rowan.
+          | If you would like to be involved in the planning process, fill out the interest form!
+          a(href="https://bit.ly/RUSIGHT") Learn More
+
+      .cell.medium-12#sumo
+        h3 ProfBots: Sumo Kit Competition
+        p
+          | Rowan IEEE`s signature robotics event, the sumo robotics competition, is coming up on October 6th! Teams will work together to assemble a kit sumo bot and modify
+          | the code to be the strongest, smartest bot in the ring. The first 15 teams to sign up will be able to borrow a kit for free! If you know nothing about programming,
+          | fear not: we will have workshops on 9/16 and 9/17 at 4PM. All participants will get free food and a free t-shirt!
+          a(href="https://goo.gl/forms/fXEBlylpRgR4IOUt2") Learn More
+
+      .cell.medium-12#committees
+        h3 Committees: Be a part of the IEEE team!
+        p
+          | Rowan IEEE is a large club: it takes a lot of manpower to run it properly! To better manage the running of the organization, various committees were formed that
+          | focus on various areas. These areas include fundraising, planning activities and service projects, securing sponsorship, and many more! By joining a committee, you
+          | become one of the decision makers in the organization, and have a say in a part of its direction. Join our team by joining a committee!
+          a(href="https://goo.gl/forms/ySDJyUXGiQ5ZWVsC2") Learn More
+
+      .cell.medium-12#tutor
+        h3 Become an IEEE Tutor!
+        p
+          | This semester, IEEE is expanding its tutoring programming to include all majors. We are looking for people to be able to teach freshman and sophomore level
+          | engineering courses in their spare time. Tutors will have their name, skills, and tentative availability posted at rowanieee.org/tutoring.php, where students will
+          | be able to browse classes and request an appointment. We all know how tough engineering can be. Why not volunteer a bit of your spare time and help a fellow
+          | student?
+          a(href="https://goo.gl/forms/1nTu8R1YbJvkzRf02") Learn More
 
   +footer()
