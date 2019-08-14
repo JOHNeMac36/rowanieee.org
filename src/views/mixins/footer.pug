@@ -2,34 +2,17 @@ mixin footer()
   - year = 2019
   footer.callout.large.secondary
     article.grid-container
-      .grid-x
-        .large-4.cell
-          h5 Vivamus Hendrerit Arcu Sed Erat Molestie
-          p
-            | Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu ad litora torquent
-            | per conubia nostra, per inceptos himenaeos. Sed molestie augue sit.
-        .large-3.large-offset-2.cell
-          ul.menu.vertical
-            li: a(href='#') One
-            li: a(href='#') Two
-            li: a(href='#') Three
-            li: a(href='#') Four
-        .large-3.cell
-          ul.menu.vertical
-            li: a(href='#') One
-            li: a(href='#') Two
-            li: a(href='#') Three
-            li: a(href='#') Four
 
-  //- jquery
-  script(src='https://code.jquery.com/jquery-2.1.4.min.js')
+  .grid-x
+    .large-4.cell
+    p Copyright &copy; 2019 Rowan IEEE Student Branch. All Rights Reserved.
 
-  //- foundation
-  script(src='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js')
-
-  //- motion-ui
-  script(src='https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.js')
-
-  script.
-    $(document).foundation();
+    //- jquery
+    script(src='https://code.jquery.com/jquery-2.1.4.min.js')
+    //- foundation
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js')
+    //- motion-ui
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.js')
+    script.
+      $(document).foundation();
 
