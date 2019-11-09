@@ -2,17 +2,15 @@ include mixins/header
 include mixins/navbar
 include mixins/footer
 
-- pageName = 'Events'
+- pageName= 'Events'
 
 +header(pageName)
 body
-  +navbar(pageName)
-  #events
-    h1 About
-    p
-      | Bibendum nulla. In erat nunc, posuere sed, auctor quis, pulvinar quis, mi. Mauris at est. Phasellus lacinia eros in arcu. Maecenas lobortis, tellus vel gravida tincidunt,
-      | elit erat suscipit arcu, in varius erat risus vel magna. Fusce nec ante quis dolor vestibulum bibendum. Pellentesque sit amet urna. Curabitur eget nisi at lectus placerat
-      | gravida. Vivamus nulla. Donec luctus. Sed quis tellus. Quisque lobortis faucibus mi. Aenean vitae risus ut arcu malesuada ornare. Maecenas nec erat. Sed rhoncus, elit
-      | laoreet sagittis luctus, nulla leo faucibus lectus, vitae accumsan est diam id felis. Nunc dui pede, vestibulum eu, elementum et, gravida quis, sapien. Donec.
+  +navbar()
+  br
+  .text-center
+    h2 Events
+  article.grid-container
+    hr
 
   +footer()
